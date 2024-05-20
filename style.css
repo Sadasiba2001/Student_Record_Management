@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #be1919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    width: 100%;
+    max-width: 1200px; /* Adjust maximum width of the container */
+    margin: 0 auto; /* Center align container */
+}
+
+.form-container {
+    background-color: rgb(24, 20, 20);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-right: 20px; /* Add margin for spacing */
+}
+
+.table-container {
+    background-color: #333;
+    color: #fff;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px; /* Adjust maximum width of table container */
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap; /* Allow items to wrap */
+    }
+
+    .form-container,
+    .table-container {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* Reset margin */
+        margin-bottom: 20px; /* Add margin at the bottom */
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    color: #ffffff;
+}
+
+ul {
+    color: #ffffff;
+}
+
+tr {
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.edit-btn {
+    background-color: rgb(118, 118, 58);
+}
+
+.delete-btn {
+    background-color: red;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #333;
+    color: #fff;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: left;
+}
+
+table td {
+    text-align: center;
+}
